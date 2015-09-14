@@ -3,7 +3,8 @@
 var count = 0;
 
 var $likeForm = $('#submit');
-var $likeButton = $('form > button');
+var $likeButton = $('form > button:first-child');
+var $resetButton = $('form > #reset');
 
 $likeForm.on('submit', function (e) {
 	e.preventDefault();
@@ -13,6 +14,12 @@ $likeForm.on('submit', function (e) {
 	} else {
 		$likeButton.html(count + ' like');
 	}
+});
+
+$resetButton.on('click', function (e) {
+	e.preventDefault();
+	count = 0;
+	$likeButton.html('Like');
 });
 
 },{}]},{},[1])
