@@ -1,0 +1,14 @@
+button {
+	margin: 10em auto 0 auto;
+	display: block;
+	padding: 2em 4em;
+	background: black;
+	color: white;
+	font-family: sans-serif;
+	font-size: 2em;
+}
+
+button:hover {
+	background: gray;
+	color: navy;
+}
